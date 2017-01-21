@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var shimmer: FBShimmeringView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.black
+        shimmer = FBShimmeringView(frame: self.imageView.frame)
+        shimmer.contentView = imageView
+        self.view.addSubview(shimmer)
+        shimmer.isShimmering = true
     }
 
     override func didReceiveMemoryWarning() {

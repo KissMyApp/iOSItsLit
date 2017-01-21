@@ -12,6 +12,8 @@
 		3DC41B8B1E32EB1C007EB1E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC41B891E32EB1C007EB1E4 /* Main.storyboard */; };
 		3DC41B8D1E32EB1C007EB1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC41B8C1E32EB1C007EB1E4 /* Assets.xcassets */; };
 		3DC41B901E32EB1C007EB1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC41B8E1E32EB1C007EB1E4 /* LaunchScreen.storyboard */; };
+		3DC41B9E1E32EB47007EB1E4 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC41B9B1E32EB47007EB1E4 /* FBShimmeringLayer.m */; };
+		3DC41B9F1E32EB47007EB1E4 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC41B9D1E32EB47007EB1E4 /* FBShimmeringView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,13 @@
 		3DC41B8C1E32EB1C007EB1E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC41B8F1E32EB1C007EB1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC41B911E32EB1C007EB1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC41B981E32EB47007EB1E4 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		3DC41B991E32EB47007EB1E4 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		3DC41B9A1E32EB47007EB1E4 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		3DC41B9B1E32EB47007EB1E4 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		3DC41B9C1E32EB47007EB1E4 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		3DC41B9D1E32EB47007EB1E4 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		3DC41BA01E32EB81007EB1E4 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +65,27 @@
 			children = (
 				3DC41B851E32EB1C007EB1E4 /* AppDelegate.swift */,
 				3DC41B871E32EB1C007EB1E4 /* ViewController.swift */,
+				3DC41BA01E32EB81007EB1E4 /* Bridging-Header.h */,
 				3DC41B891E32EB1C007EB1E4 /* Main.storyboard */,
 				3DC41B8C1E32EB1C007EB1E4 /* Assets.xcassets */,
 				3DC41B8E1E32EB1C007EB1E4 /* LaunchScreen.storyboard */,
 				3DC41B911E32EB1C007EB1E4 /* Info.plist */,
+				3DC41B971E32EB47007EB1E4 /* FBShimmering */,
 			);
 			path = iosItsLit;
+			sourceTree = "<group>";
+		};
+		3DC41B971E32EB47007EB1E4 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				3DC41B981E32EB47007EB1E4 /* FBShimmering-Prefix.pch */,
+				3DC41B991E32EB47007EB1E4 /* FBShimmering.h */,
+				3DC41B9A1E32EB47007EB1E4 /* FBShimmeringLayer.h */,
+				3DC41B9B1E32EB47007EB1E4 /* FBShimmeringLayer.m */,
+				3DC41B9C1E32EB47007EB1E4 /* FBShimmeringView.h */,
+				3DC41B9D1E32EB47007EB1E4 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC41B9E1E32EB47007EB1E4 /* FBShimmeringLayer.m in Sources */,
 				3DC41B881E32EB1C007EB1E4 /* ViewController.swift in Sources */,
 				3DC41B861E32EB1C007EB1E4 /* AppDelegate.swift in Sources */,
+				3DC41B9F1E32EB47007EB1E4 /* FBShimmeringView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quanindustries.iosItsLit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iosItsLit/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -277,6 +304,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quanindustries.iosItsLit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/iosItsLit/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
