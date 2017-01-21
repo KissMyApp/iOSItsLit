@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2017-01-20 at 5.02.15 PM" translatesAutoresizingMaskIntoConstraints="NO" id="YIQ-bj-fpx">
-                                <rect key="frame" x="67" y="126" width="240" height="314"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bold" translatesAutoresizingMaskIntoConstraints="NO" id="YIQ-bj-fpx">
+                                <rect key="frame" x="16" y="92" width="343" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2017-01-20 at 5.02.15 PM" width="402" height="633"/>
+        <image name="bold" width="473" height="651"/>
     </resources>
 </document>
